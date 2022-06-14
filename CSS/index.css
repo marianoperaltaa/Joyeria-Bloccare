@@ -66,6 +66,16 @@ header nav ul .menu__item {
 
 header nav ul li .menu__link {
     font-size: 1.2rem;
+    padding: 1rem 1.2rem;
+    transition: background-color 2s;
+}
+
+header nav ul li .menu__link:hover {
+    color: black;
+    background-color: #DBA159;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: #DBA159;
 }
 
 header nav ul li .menu__link--active {
@@ -94,31 +104,58 @@ main .mainGallery {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     padding: 3rem 3rem;
+    max-width: 700px;
+    margin: auto;
 }
 
 main .mainGallery .pendant {
     grid-row: 1/3;
     grid-column: 1/2;
+    transition: transform 2s;
 }
 
 main .mainGallery .chain {
     grid-column: 2/3;
     grid-row: 1/2;
+    transition: transform 2s;
 }
 
 main .mainGallery .bracelet {
     grid-column: 2/3;
     grid-row: 2/4;
+    transition: transform 2s;
 }
 
 main .mainGallery .ring {
     grid-column: 3/4;
     grid-row: 1/2;
+    transition: transform 2s;
 }
 
 main .mainGallery .clock {
     grid-column: 3/4;
     grid-row: 2/4;
+    transition: transform 2s;
+}
+
+main section .pendant:hover {
+    transform: scale(1.5, 1.5);
+}
+
+main section .chain:hover {
+    transform: scale(1.5, 1.5);
+}
+
+main section .bracelet:hover {
+    transform: scale(1.5, 1.5);
+}
+
+main section .ring:hover {
+    transform: scale(1.5, 1.5);
+}
+
+main section .clock:hover {
+    transform: scale(1.5, 1.5);
 }
 
                 /* FIN GRID */
@@ -551,6 +588,7 @@ header nav .menu {
 
 header nav ul li .menu__link {
     font-size: 1.3rem;
+    padding: 0;
 }
 
 .mainContent {
