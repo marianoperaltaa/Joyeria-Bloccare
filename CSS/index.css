@@ -343,7 +343,7 @@ footer .secondaryFooter__links {
 
 .news {
     background-color: #F1F1F1;
-    padding: 0 25rem;
+    /* padding: 0 25rem; */
     display: flex;
     flex-direction: column;
 }
@@ -357,6 +357,7 @@ main .news__tittle {
 
 main .news__new {
     padding-bottom: 5rem;
+    max-width: 900px;
 }
 
 main section .new__office {
@@ -375,7 +376,7 @@ main section article .office__description {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem;
+    /* padding: 5rem; */
 }
 
 main section article .office__description img {
@@ -397,10 +398,10 @@ main section article .office__description p {
 
                     /* MAIN */
                     /* NOSOTROS */
-
 .aboutUs {
     background-color: #F1F1F1;
     padding: 0 10rem;
+    margin-bottom: 25rem;
 }
 
 main .aboutUs__tittle {
