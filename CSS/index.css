@@ -12,6 +12,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #F1F1F1;
 }
 
 ul {
@@ -31,12 +32,9 @@ img {
                     /* HEADER */
 
 .mainHeader {
-    background-image: url(../img/banner2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 70rem;
-}
+    margin-bottom: 5rem;
+    background-color: black;
+} 
 
 .mainHeader nav {
     display: flex;
@@ -82,7 +80,6 @@ header nav ul li .menu__link--active {
     border-bottom: 2px solid #DBA159;
     padding-bottom: 1.2rem;
 }
-
                     /* MAIN */ 
 
 .mainContent {
@@ -299,82 +296,21 @@ header nav ul li .secondaryMenu__links {
 .products {
     background-color: #F1F1F1;
     padding: 0 10rem;
+    margin-bottom: 6rem;
 }
 
 main .products__tittles {
-    font-size: 2rem;
+    margin: 5rem 0;
     text-align: center;
-    padding: 6rem 0;
 }
 
-main .products__types {
-    padding-bottom: 20rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 8rem;
+main div .col .card {
+    max-width: 350px;
 }
 
-main section .types__chain {
-    width: 30rem;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-main section .types__bracelet {
-    width: 30rem;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-main section .types__clock {
-    width: 30rem;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-main section .types__pendant {
-    width: 30rem;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-main section .types__ring {
-    width: 30rem;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-main section article .cards__tittles {
-    font-size: 1.5rem;
-    text-align: center;
-    padding-bottom: 2rem;
-}
-
-main section article .cards__text {
-    font-size: 1.3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main section article .cards__text img {
-    border-radius: 1rem;
-    border-style: solid;
-    border-color: black;
-    max-width: 17.5rem;
-    max-height: 170px;
-}
-
-main section article .cards__text p {
-    color: #525252;
-    padding: 2rem 0;
-    text-align: justify;
+main div .col .card img {
+    max-height: 350px;
+    max-width: 350px;
 }
 
                 /* FOOTER PRINCIPAL*/
@@ -566,10 +502,6 @@ main .contactUs__map {
 @media screen and (max-width: 960px) {
 
                     /* INICIO */
-.mainHeader {
-    background-image: none;
-    height: 150px;
-}
 
 .mainHeader nav {
     display: flex;
@@ -673,11 +605,6 @@ main section .personalization__description img {
 }
 
                     /* PRODUCTOS */
-
-.products {
-    padding: 0 0rem;
-}
-
 .secondaryHeader {
     height: 140px;
 }
@@ -701,6 +628,10 @@ header nav .secondaryMenu {
 
 header nav ul li .secondaryMenu__links {
     font-size: 1.3rem;
+}
+
+.products {
+    padding: 0 5rem;
 }
 
 main .products__tittles {
@@ -780,7 +711,15 @@ main .contactUs__map {
 
 }
 }
+                /* MEDIA QUERIE 768PX */
 
+@media screen and (max-width: 768px) {
+                    /*PRODUCTOS*/
+main div .col .card {
+    margin: auto;
+    padding: 0 1rem;
+}
+}
 
                 /* MEDIA QUERIE 480PX */
 
@@ -788,12 +727,6 @@ main .contactUs__map {
 
                     /* INICIO */
                     /* HEADER */
-
-.mainHeader {
-    background-image: none;
-    height: 150px;
-}
-
 .mainHeader nav {
     display: flex;
     flex-direction: column;
