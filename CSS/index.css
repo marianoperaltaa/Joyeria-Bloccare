@@ -137,6 +137,16 @@ footer div .group-1__box .box__redSocial a {
     text-align: center;
 }
 
+footer div .group-1__box .box__redSocial a .iconify {
+    color: #efefef;
+    transition: all 1s;
+}
+
+footer div .group-1__box .box__redSocial a .iconify:hover {
+    transform: scale(2, 2);
+    color: #F4D35E;
+}
+
 footer .mainFooter__group-2 {
     background-color: rgb(29, 28, 28);
     padding: 1.5rem 1rem;
