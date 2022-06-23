@@ -1,4 +1,4 @@
-    /* NORMALIZE */
+/* NORMALIZE */
 
 * {
     margin: 0;
@@ -177,7 +177,7 @@ main .mainPicture {
     margin-bottom: 15rem;
 }
 
-#shoppingBag {
+#shop__bag {
     animation-name: rotateMe;
     animation-duration: 6s;
     animation-iteration-count: infinite;

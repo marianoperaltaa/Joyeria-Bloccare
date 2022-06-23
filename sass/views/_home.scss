@@ -1,0 +1,119 @@
+/* HOME */
+.mainContent {
+    background-color: #F1F1F1;
+    
+    .mainTittle {
+        font-size: $text-large;
+        text-align: center;
+        padding: $spacing-large 0;
+    }
+    
+    .mainPicture {
+        max-width: 20rem;
+        margin: 0 auto;
+        margin-bottom: 15rem;
+        
+        svg g g #shop__bag {
+            animation-name: rotateMe;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            
+            @keyframes rotateMe {
+                0% {
+                    transform: rotatex(-50deg);
+                }
+            
+                100% {
+                    transform: rotateX(50deg);
+                }
+        }
+        }
+    }
+    
+    .mainJobs {
+        padding-bottom: $spacing-xlarge;
+        
+        .jobs__gold {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            
+            .gold__tittle{
+                font-size: $text-medium;
+                text-align: center;
+                padding-bottom: 4.5rem;
+                text-decoration: underline;
+            }
+            
+            .gold__description {
+                display: flex;
+                gap: $spacing-small;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 2px solid #F4D35E;
+                padding-bottom: $spacing-medium;
+                margin-bottom: 1rem;
+                
+                img {
+                    max-width: 20rem;
+                    max-height: 20rem;
+                    border-radius: 50%;
+                    border-style: solid;
+                }
+                
+                p {
+                    max-width: 50rem;
+                    text-align: justify;
+                    font-size: 1.5rem;
+                    color: #525252;
+                }
+            }
+        }
+        
+        .jobs__personalization {
+            margin-top: 1rem;
+            border-top: 2px solid #F4D35E;
+            
+            .personalization__tittle{
+                font-size: $text-medium;
+                text-align: center;
+                padding-bottom: $spacing-small;
+                padding-top: 5rem;
+                text-decoration: underline;
+            }
+            
+            .personalization__description {
+                display: flex;
+                gap: $spacing-small;
+                justify-content: space-between;
+                align-items: center;
+                
+                img {
+                    max-width: 20rem;
+                    max-height: 20rem;
+                    border-radius: 50%;
+                    border-style: solid;
+                }
+                
+                p {
+                    max-width: 50rem;
+                    text-align: justify;
+                    font-size: 1.5rem;
+                    color: #525252;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
