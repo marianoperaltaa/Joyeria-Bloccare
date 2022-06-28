@@ -1,0 +1,25 @@
+/* NOVEDADES */ 
+.aboutUs {
+    background-color: #F1F1F1;
+    margin-bottom: 25rem;
+    .aboutUs__tittle {
+        font-size: 2.1rem;
+        text-align: center;
+        padding: 8rem 0;
+        text-decoration: overline;
+    }
+    .accordion {
+        .accordion-item {
+            .accordion-header {
+                .accordion-button {
+                    font-size: 1em;
+                    color: $dark-text-color;
+                }
+            }
+        }
+        .accordion-body {
+                color: $dark-text-color;
+                font-size: $text-xsmall;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/* NOVEDADES */ 
+.news {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    
+    .news__tittle {
+        font-size: 2.1rem;
+        text-align: center;
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+    }
+    
+    .news__new {
+        padding-bottom: 5rem;
+        max-width: 900px;
+        
+        .new__office {
+            border-radius: 1rem;
+            border-style: solid;
+            border-color: black;
+            
+            .office__tittle {
+                text-align: center;
+                font-size: 1.6rem;
+                padding: 4rem 0;
+            }
+            
+            .office__description {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                img {
+                    max-width: 40rem;
+                    max-height: 300px;
+                    margin-bottom: 4rem;
+                    border-radius: 5px;
+                    border-style: solid;
+                    border-color: black;
+                }
+                
+                p {
+                    color: #525252;
+                    font-size: 1.3rem;
+                    max-width: 80rem;
+                    text-align: center;
+                    padding-bottom: 4rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

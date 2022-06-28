@@ -1,0 +1,30 @@
+/* PRODUCTOS */ 
+.products {
+    background-color: #F1F1F1;
+    margin-bottom: 6rem;
+    
+    .products__tittles {
+        margin: 5rem 0;
+        text-align: center;
+    }
+    
+    div .col {
+        transition: all 1.5s;
+        &:hover {
+            transform: scale(1.2, 1.2);
+            z-index: 1;
+        }
+        .card {
+            max-width: 350px;
+            img {
+                max-height: 350px;
+                max-width: 350px;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+
+
+

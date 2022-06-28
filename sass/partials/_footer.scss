@@ -49,9 +49,10 @@
                     background-color: rgb(29, 28, 28);
                     text-align: center;
                     
-                    a .iconify {
+                    .iconify {
                         color: #efefef;
                         transition: all 1s;
+
                         &:hover {
                             transform: scale(2, 2);
                             color: #F4D35E;
