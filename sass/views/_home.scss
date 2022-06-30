@@ -31,27 +31,26 @@
     }
     
     .mainJobs {
-        padding-bottom: $spacing-xlarge;
+        // padding-bottom: $spacing-xlarge;
         
         .jobs__gold {
             margin-top: 3rem;
             margin-bottom: 1rem;
+            border-bottom: 2px solid #F4D35E;
             
             .gold__tittle{
                 font-size: $text-medium;
                 text-align: center;
-                padding-bottom: 4.5rem;
+                // padding-bottom: 4.5rem;
                 text-decoration: underline;
             }
             
             .gold__description {
                 display: flex;
-                gap: $spacing-small;
+                gap: map-get($spacings, spacing-small);
                 justify-content: space-between;
                 align-items: center;
-                border-bottom: 2px solid #F4D35E;
                 padding-bottom: $spacing-medium;
-                margin-bottom: 1rem;
                 
                 img {
                     max-width: 20rem;
@@ -76,14 +75,14 @@
             .personalization__tittle{
                 font-size: $text-medium;
                 text-align: center;
-                padding-bottom: $spacing-small;
+                // padding-bottom: $spacing-small;
                 padding-top: 5rem;
                 text-decoration: underline;
             }
             
             .personalization__description {
                 display: flex;
-                gap: $spacing-small;
+                gap: map-get($spacings, spacing-small);
                 justify-content: space-between;
                 align-items: center;
                 

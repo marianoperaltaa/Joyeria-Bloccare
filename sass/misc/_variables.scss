@@ -14,6 +14,21 @@
     $spacing-small: 4rem;
     $spacing-xsmall: 2rem;
 
+    /* Spacings-With-Map */
+    $spacings:(
+        spacing-xlarge: 10rem,
+        spacing-large: 8rem,
+        spacing-medium: 6rem,
+        spacing-small: 4rem,
+        spacing-xsmall: 2rem
+    );
+    
+    @each $key, $val in $spacings {
+        .#{$key} {
+            padding-bottom: #{$val};
+        }
+    }
+
     /* Font Family */ 
     $font-principal: 'Poppins', sans-serif;
     $font-secondary: 'Raleway', sans-serif;

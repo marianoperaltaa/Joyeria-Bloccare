@@ -21,8 +21,9 @@
             
             .menu {
                 display: flex;
-                gap: $spacing-xsmall;
+                gap: map-get($spacings, spacing-xsmall);
                 padding-left: 0;
+                margin-bottom: 0;
                 
                 .menu__item {
                     text-transform: uppercase;

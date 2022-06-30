@@ -16,10 +16,33 @@
         }
         .card {
             max-width: 350px;
+            padding-bottom: 2rem;
             img {
                 max-height: 350px;
                 max-width: 350px;
                 padding: 1rem;
+            }
+            .button {
+                width: 170px;
+                margin: 8px auto;
+                font-size: $text-xsmall;
+                border: none;
+                border-radius: 5px;
+                border-style: hidden;
+                text-align: center;
+                color: #efefef;
+                background-color: rgb(42, 81, 190);
+                padding: 1rem 8px;
+            }
+            .button--more {
+                @extend .button;
+                background-color: #f9c846;
+                color: black
+            }
+            .button--shop {
+                @extend .button;
+                background-color: #333533;
+                color: #efefef;
             }
         }
     }
