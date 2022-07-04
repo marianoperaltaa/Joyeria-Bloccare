@@ -169,6 +169,14 @@ img {
           text-align: justify;
           font-size: 1.5rem;
           color: #525252; }
+        .mainContent .mainJobs .jobs__gold .gold__description a {
+          color: #DBA159;
+          font-weight: bold;
+          transition: all 1.1s; }
+          .mainContent .mainJobs .jobs__gold .gold__description a:hover {
+            background-color: #525252;
+            border-radius: 3px;
+            padding: 5px 1rem; }
     .mainContent .mainJobs .jobs__personalization {
       margin-top: 1rem;
       border-top: 2px solid #F4D35E; }
@@ -193,6 +201,14 @@ img {
           text-align: justify;
           font-size: 1.5rem;
           color: #525252; }
+        .mainContent .mainJobs .jobs__personalization .personalization__description a {
+          color: #DBA159;
+          font-weight: bold;
+          transition: all 1.1s; }
+          .mainContent .mainJobs .jobs__personalization .personalization__description a:hover {
+            background-color: #525252;
+            border-radius: 3px;
+            padding: 5px 1rem; }
 
 /* PRODUCTOS */
 .products {
@@ -207,11 +223,33 @@ img {
       transform: scale(1.2, 1.2);
       z-index: 1; }
     .products div .col .card {
-      max-width: 350px; }
+      max-width: 350px;
+      padding-bottom: 1rem; }
       .products div .col .card img {
         max-height: 350px;
         max-width: 350px;
         padding: 1rem; }
+    .products div .col .card-body .card-title {
+      font-size: 1.5em; }
+    .products div .col .card-body .card-text {
+      font-size: 1.1em; }
+    .products div .col .button, .products div .col .button--more, .products div .col .button--shop {
+      width: 170px;
+      margin: 8px auto;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      border-style: hidden;
+      text-align: center;
+      color: #efefef;
+      background-color: #2a51be;
+      padding: 1rem 8px; }
+    .products div .col .button--more {
+      background-color: #f9c846;
+      color: black; }
+    .products div .col .button--shop {
+      background-color: #333533;
+      color: #efefef; }
 
 /* NOVEDADES */
 .news {
@@ -229,28 +267,34 @@ img {
     .news .news__new .new__office {
       border-radius: 1rem;
       border-style: solid;
-      border-color: black; }
+      border-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .news .news__new .new__office .office__img img {
+        max-width: 40rem;
+        max-height: 300px;
+        border-radius: 5px;
+        border-style: hidden;
+        margin: 4rem 0; }
       .news .news__new .new__office .office__tittle {
         text-align: center;
         font-size: 1.6rem;
-        padding: 4rem 0; }
-      .news .news__new .new__office .office__description {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .news .news__new .new__office .office__description img {
-          max-width: 40rem;
-          max-height: 300px;
-          margin-bottom: 4rem;
-          border-radius: 5px;
-          border-style: solid;
-          border-color: black; }
-        .news .news__new .new__office .office__description p {
-          color: #525252;
-          font-size: 1.3rem;
-          max-width: 80rem;
-          text-align: center;
-          padding-bottom: 4rem; }
+        padding: 2rem 0; }
+      .news .news__new .new__office .office__description p {
+        color: #525252;
+        font-size: 1.3rem;
+        max-width: 80rem;
+        text-align: center;
+        padding-bottom: 4rem; }
+      .news .news__new .new__office .office__description a {
+        color: #DBA159;
+        font-weight: bold;
+        transition: all 1.1s; }
+        .news .news__new .new__office .office__description a:hover {
+          background-color: #525252;
+          padding: 5px 1rem;
+          border-radius: 3px; }
 
 /* NOVEDADES */
 .aboutUs {
@@ -261,12 +305,16 @@ img {
     text-align: center;
     padding: 8rem 0;
     text-decoration: overline; }
-  .aboutUs .accordion .accordion-item .accordion-header .accordion-button {
-    font-size: 1em;
-    color: #525252; }
-  .aboutUs .accordion .accordion-body {
-    color: #525252;
-    font-size: 1.2em; }
+  .aboutUs .accordion {
+    max-width: 50rem;
+    margin: auto; }
+    .aboutUs .accordion .accordion-item .accordion-header .accordion-button {
+      font-size: 1em;
+      color: #f9c846;
+      background-color: #333533; }
+    .aboutUs .accordion .accordion-body {
+      color: #525252;
+      font-size: 1.2em; }
 
 /* CONTACTO */
 .contactUs {
@@ -332,6 +380,12 @@ img {
 /* MEDIA QUERIES */
 /* MEDIA QUERIE 960PX */
 @media screen and (max-width: 960px) {
+  /* HEADER */
+  .mainHeader nav .menu .menu__link {
+    transition: none; }
+    .mainHeader nav .menu .menu__link:hover {
+      all: unset;
+      color: #F4D35E; }
   /* FOOTER */
   .mainFooter .mainFooter__group-1 {
     width: 100%;

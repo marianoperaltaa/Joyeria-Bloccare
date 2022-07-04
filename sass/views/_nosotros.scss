@@ -9,11 +9,14 @@
         text-decoration: overline;
     }
     .accordion {
+        max-width: 50rem;
+        margin: auto;
         .accordion-item {
             .accordion-header {
                 .accordion-button {
                     font-size: 1em;
-                    color: $dark-text-color;
+                    color: #f9c846;
+                    background-color: #333533;
                 }
             }
         }
