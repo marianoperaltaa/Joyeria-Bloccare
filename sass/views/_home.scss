@@ -1,11 +1,11 @@
 /* HOME */
 .mainContent {
-    background-color: #F1F1F1;
+    background-color: $base;
     
     .mainTittle {
-        font-size: $text-large;
+        font-size: $text-xlarge;
         text-align: center;
-        padding: $spacing-large 0;
+        padding: $spacing-medium 0;
     }
     
     .mainPicture {
@@ -38,7 +38,7 @@
             margin-bottom: 1rem;
             
             .gold__tittle{
-                font-size: $text-medium;
+                font-size: $text-large;
                 text-align: center;
                 padding-bottom: 4.5rem;
                 text-decoration: underline;
@@ -49,7 +49,7 @@
                 gap: $spacing-small;
                 justify-content: space-between;
                 align-items: center;
-                border-bottom: 2px solid #F4D35E;
+                border-bottom: 2px solid $secondary;
                 padding-bottom: $spacing-medium;
                 margin-bottom: 1rem;
                 
@@ -63,8 +63,8 @@
                 p {
                     max-width: 50rem;
                     text-align: justify;
-                    font-size: 1.5rem;
-                    color: #525252;
+                    font-size: $text-medium;
+                    color: $dark-color;
                 }
 
                 a {
@@ -72,7 +72,7 @@
                     font-weight: bold;
                     transition: all 1.1s;
                     &:hover {
-                        background-color: #525252;
+                        background-color: $dark-color;
                         border-radius: 3px;
                         padding: 5px 1rem;
                     }
@@ -81,11 +81,11 @@
         }
         
         .jobs__personalization {
-            margin-top: 1rem;
-            border-top: 2px solid #F4D35E;
+            margin-top: 5px;
+            border-top: 2px solid $secondary;
             
             .personalization__tittle{
-                font-size: $text-medium;
+                font-size: $text-large;
                 text-align: center;
                 padding-bottom: $spacing-small;
                 padding-top: 5rem;
@@ -108,8 +108,8 @@
                 p {
                     max-width: 50rem;
                     text-align: justify;
-                    font-size: 1.5rem;
-                    color: #525252;
+                    font-size: $text-medium;
+                    color: $dark-color;
                 }
 
                 a {
@@ -117,7 +117,7 @@
                     font-weight: bold;
                     transition: all 1.1s;
                     &:hover {
-                        background-color: #525252;
+                        background-color: $dark-color;
                         border-radius: 3px;
                         padding: 5px 1rem;
                 }

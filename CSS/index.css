@@ -36,7 +36,6 @@ img {
   .mainHeader nav {
     display: flex;
     align-items: center;
-    background-color: black;
     padding: 2rem 0;
     height: 9rem;
     justify-content: space-around; }
@@ -47,7 +46,8 @@ img {
     .mainHeader nav .menu {
       display: flex;
       gap: 2rem;
-      padding-left: 0; }
+      padding-left: 0;
+      margin-bottom: 0; }
       .mainHeader nav .menu .menu__item {
         text-transform: uppercase; }
       .mainHeader nav .menu .menu__link {
@@ -109,7 +109,7 @@ img {
         transition: all 1s; }
         .mainFooter .mainFooter__group-1 .group-1__box .box__redSocial a .iconify:hover {
           transform: scale(2, 2);
-          color: #F4D35E; }
+          color: #f9c846; }
   .mainFooter .mainFooter__group-2 {
     background-color: #1d1c1c;
     padding: 1.5rem 1rem;
@@ -117,16 +117,16 @@ img {
     color: #F4D35E;
     grid-column: 1/4; }
     .mainFooter .mainFooter__group-2 small {
-      font-size: 1.5rem; }
+      font-size: 1.4em; }
 
 /* VIEWS */
 /* HOME */
 .mainContent {
   background-color: #F1F1F1; }
   .mainContent .mainTittle {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
-    padding: 8rem 0; }
+    padding: 6rem 0; }
   .mainContent .mainPicture {
     max-width: 20rem;
     margin: 0 auto;
@@ -147,7 +147,7 @@ img {
       margin-top: 3rem;
       margin-bottom: 1rem; }
       .mainContent .mainJobs .jobs__gold .gold__tittle {
-        font-size: 2.2em;
+        font-size: 1.8em;
         text-align: center;
         padding-bottom: 4.5rem;
         text-decoration: underline; }
@@ -167,7 +167,7 @@ img {
         .mainContent .mainJobs .jobs__gold .gold__description p {
           max-width: 50rem;
           text-align: justify;
-          font-size: 1.5rem;
+          font-size: 1.6em;
           color: #525252; }
         .mainContent .mainJobs .jobs__gold .gold__description a {
           color: #DBA159;
@@ -178,10 +178,10 @@ img {
             border-radius: 3px;
             padding: 5px 1rem; }
     .mainContent .mainJobs .jobs__personalization {
-      margin-top: 1rem;
+      margin-top: 5px;
       border-top: 2px solid #F4D35E; }
       .mainContent .mainJobs .jobs__personalization .personalization__tittle {
-        font-size: 2.2em;
+        font-size: 1.8em;
         text-align: center;
         padding-bottom: 4rem;
         padding-top: 5rem;
@@ -199,7 +199,7 @@ img {
         .mainContent .mainJobs .jobs__personalization .personalization__description p {
           max-width: 50rem;
           text-align: justify;
-          font-size: 1.5rem;
+          font-size: 1.6em;
           color: #525252; }
         .mainContent .mainJobs .jobs__personalization .personalization__description a {
           color: #DBA159;
@@ -215,7 +215,8 @@ img {
   background-color: #F1F1F1;
   margin-bottom: 6rem; }
   .products .products__tittles {
-    margin: 5rem 0;
+    font-size: 2em;
+    margin: 6rem 0;
     text-align: center; }
   .products div .col {
     transition: all 1.5s; }
@@ -230,13 +231,14 @@ img {
         max-width: 350px;
         padding: 1rem; }
     .products div .col .card-body .card-title {
-      font-size: 1.5em; }
+      font-size: 1.6em; }
     .products div .col .card-body .card-text {
-      font-size: 1.1em; }
+      font-size: 1.2em;
+      color: #525252; }
     .products div .col .button, .products div .col .button--more, .products div .col .button--shop {
       width: 170px;
       margin: 8px auto;
-      font-size: 1.2em;
+      font-size: 1.4em;
       border: none;
       border-radius: 5px;
       border-style: hidden;
@@ -248,7 +250,7 @@ img {
       background-color: #f9c846;
       color: black; }
     .products div .col .button--shop {
-      background-color: #333533;
+      background-color: #525252;
       color: #efefef; }
 
 /* NOVEDADES */
@@ -257,7 +259,7 @@ img {
   display: flex;
   flex-direction: column; }
   .news .news__tittle {
-    font-size: 2.1rem;
+    font-size: 2em;
     text-align: center;
     padding-top: 6rem;
     padding-bottom: 4rem; }
@@ -271,7 +273,7 @@ img {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .news .news__new .new__office .office__img img {
+      .news .news__new .new__office img {
         max-width: 40rem;
         max-height: 300px;
         border-radius: 5px;
@@ -279,11 +281,11 @@ img {
         margin: 4rem 0; }
       .news .news__new .new__office .office__tittle {
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 1.6em;
         padding: 2rem 0; }
       .news .news__new .new__office .office__description p {
         color: #525252;
-        font-size: 1.3rem;
+        font-size: 1.4em;
         max-width: 80rem;
         text-align: center;
         padding-bottom: 4rem; }
@@ -301,7 +303,7 @@ img {
   background-color: #F1F1F1;
   margin-bottom: 25rem; }
   .aboutUs .aboutUs__tittle {
-    font-size: 2.1rem;
+    font-size: 2em;
     text-align: center;
     padding: 8rem 0;
     text-decoration: overline; }
@@ -311,7 +313,7 @@ img {
     .aboutUs .accordion .accordion-item .accordion-header .accordion-button {
       font-size: 1em;
       color: #f9c846;
-      background-color: #333533; }
+      background-color: #525252; }
     .aboutUs .accordion .accordion-body {
       color: #525252;
       font-size: 1.2em; }
@@ -324,7 +326,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, auto); }
   .contactUs .contactUs__tittle {
-    font-size: 2.1rem;
+    font-size: 2em;
     text-align: center;
     padding: 8rem 0;
     grid-column: 1/5; }
@@ -342,6 +344,10 @@ img {
       flex-direction: column;
       flex-basis: 100%;
       align-items: center; }
+      .contactUs .contactUs__form .row .col-md-6 .form-label {
+        font-size: 1.4em; }
+      .contactUs .contactUs__form .row .col-md-6 .form-control {
+        margin-bottom: 5px; }
       .contactUs .contactUs__form .row .col-6 .btn {
         background-color: #DBA159;
         border-color: #DBA159;
@@ -363,10 +369,11 @@ img {
         max-width: 2.5rem;
         padding-bottom: 1rem; }
       .contactUs .contactUs__information .information__cards .cards__text {
-        font-size: 1.5rem; }
+        font-size: 1.4em; }
         .contactUs .contactUs__information .information__cards .cards__text p {
           padding: 0;
-          text-align: center; }
+          text-align: center;
+          color: #525252; }
         .contactUs .contactUs__information .information__cards .cards__text strong {
           color: black;
           padding: 1rem 0; }
@@ -413,53 +420,53 @@ img {
   .mainContent {
     padding: 0; }
     .mainContent .mainTittle {
-      font-size: 2rem; }
+      font-size: 1.6em; }
     .mainContent .mainPicture {
       max-width: 15rem; }
-    .mainContent section article .gold__tittle {
-      font-size: 1.5rem; }
-    .mainContent section article .gold__description {
+    .mainContent .mainJobs .jobs__gold .gold__tittle {
+      font-size: 1.6em; }
+    .mainContent .mainJobs .jobs__gold .gold__description {
       display: flex;
       flex-direction: column; }
-      .mainContent section article .gold__description p {
-        max-width: 270px; }
-      .mainContent section article .gold__description img {
-        max-width: 20rem;
-        max-height: 20rem; }
-    .mainContent section article .personalization__tittle {
-      font-size: 1.5rem; }
-    .mainContent section article .personalization__description {
+      .mainContent .mainJobs .jobs__gold .gold__description p {
+        max-width: 40rem;
+        font-size: 1.4em; }
+      .mainContent .mainJobs .jobs__gold .gold__description img {
+        max-width: 15rem;
+        max-height: 15rem; }
+    .mainContent .mainJobs .jobs__personalization .personalization__tittle {
+      font-size: 1.6em; }
+    .mainContent .mainJobs .jobs__personalization .personalization__description {
       display: flex;
       flex-direction: column; }
-      .mainContent section article .personalization__description p {
-        max-width: 270px; }
-      .mainContent section article .personalization__description img {
-        max-width: 20rem;
-        max-height: 20rem; }
+      .mainContent .mainJobs .jobs__personalization .personalization__description p {
+        max-width: 40rem;
+        font-size: 1.4em; }
+      .mainContent .mainJobs .jobs__personalization .personalization__description img {
+        max-width: 15rem;
+        max-height: 15rem; }
   /* PRODUCTOS */
   .products {
     padding: 0 5rem; }
     .products .products__tittles {
-      font-size: 1.6rem; }
+      font-size: 1.6em; }
   /* NOVEDADES */
   .news {
     padding: 0; }
     .news .news__tittle {
-      font-size: 1.6rem; }
+      font-size: 1.6em; }
     .news .news__new {
       max-width: 480px;
       margin: 0 auto; }
       .news .news__new .new__office .office__tittle {
-        font-size: 1.3rem; }
+        font-size: 1.4em; }
       .news .news__new .new__office .office__description p {
-        max-width: 400px;
-        max-height: 200px;
-        overflow-y: visible; }
+        padding: 4rem; }
   /* NOSOTROS */
   .aboutUs {
     padding: 0 5rem; }
     .aboutUs .aboutUs__tittle {
-      font-size: 1.4rem; }
+      font-size: 1.6em; }
   /* CONTACTO */
   .contactUs {
     padding: 0 2.5rem;
@@ -498,7 +505,7 @@ img {
     .mainHeader nav .menu {
       gap: 2rem; }
       .mainHeader nav .menu li .menu__link {
-        font-size: 1.3rem;
+        font-size: 1.2em;
         padding: 4px;
         padding-bottom: 1rem; }
   /*PRODUCTOS*/
@@ -542,7 +549,7 @@ img {
     .mainHeader nav .menu {
       gap: 5px; }
       .mainHeader nav .menu li .menu__link {
-        font-size: 1rem; }
+        font-size: 1em; }
   /* FOOTER */
   .mainFooter .mainFooter__group-1 {
     width: 100%;
@@ -571,45 +578,57 @@ img {
   .mainContent {
     padding: 0; }
     .mainContent .mainTittle {
-      font-size: 1.5rem; }
+      font-size: 1.4em; }
     .mainContent .mainPicture {
       max-width: 10rem; }
     .mainContent .mainJobs {
       padding: 0 3rem;
       padding-bottom: 8rem; }
-      .mainContent .mainJobs article .gold__tittle {
+      .mainContent .mainJobs .jobs__gold .gold__tittle {
         font-size: 1.3rem; }
-      .mainContent .mainJobs article .gold__description {
+      .mainContent .mainJobs .jobs__gold .gold__description {
         display: flex;
         flex-direction: column; }
-        .mainContent .mainJobs article .gold__description img {
+        .mainContent .mainJobs .jobs__gold .gold__description img {
           width: 15rem;
           height: 15rem; }
-      .mainContent .mainJobs article .personalization__tittle {
+      .mainContent .mainJobs .jobs__personalization .personalization__tittle {
         font-size: 1.3rem; }
-      .mainContent .mainJobs article .personalization__description {
+      .mainContent .mainJobs .jobs__personalization .personalization__description {
         display: flex;
         flex-direction: column; }
-        .mainContent .mainJobs article .personalization__description img {
-          width: 25rem;
-          height: 25rem; }
+        .mainContent .mainJobs .jobs__personalization .personalization__description img {
+          width: 15rem;
+          height: 15rem; }
   /* PRODUCTOS */
   .products {
-    padding: 0 0rem; }
+    padding: 0 0; }
     .products .products__tittles {
-      font-size: 1.6rem; }
+      font-size: 1.4em; }
+    .products .row .col .card .card-body .card-title {
+      font-size: 1.4em; }
+    .products .row .col .card .button--more {
+      font-size: 1.2em; }
+    .products .row .col .card .button--shop {
+      font-size: 1.2em; }
   /* NOVEDADES */
+  .news .news__tittle {
+    font-size: 1.4em; }
   .news .news__new {
     padding: 0 2rem;
     margin-bottom: 6rem; }
     .news .news__new .new__office {
       border: none; }
-      .news .news__new .new__office .office__description {
+      .news .news__new .new__office .office__description p {
         padding: 0;
-        overflow-y: visible; }
+        font-size: 1.2em; }
   /* NOSOTROS */
   .aboutUs {
     padding: 0 2.5rem; }
+    .aboutUs .aboutUs__tittle {
+      font-size: 1.4em; }
   /* CONTACTO */
+  .contactUs .contactUs__tittle {
+    font-size: 1.4em; }
   .contactUs .contactUs__form .row .col-md-6 {
     width: 100%; } }

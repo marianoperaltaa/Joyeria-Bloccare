@@ -1,11 +1,11 @@
 /* NOVEDADES */ 
 .aboutUs {
-    background-color: #F1F1F1;
+    background-color: $base;
     margin-bottom: 25rem;
     .aboutUs__tittle {
-        font-size: 2.1rem;
+        font-size: $text-xlarge;
         text-align: center;
-        padding: 8rem 0;
+        padding: $spacing-large 0;
         text-decoration: overline;
     }
     .accordion {
@@ -15,13 +15,13 @@
             .accordion-header {
                 .accordion-button {
                     font-size: 1em;
-                    color: #f9c846;
-                    background-color: #333533;
+                    color: $dark-yellow;
+                    background-color: $dark-color;
                 }
             }
         }
         .accordion-body {
-                color: $dark-text-color;
+                color: $dark-color;
                 font-size: $text-xsmall;
         }
     }

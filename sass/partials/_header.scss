@@ -2,11 +2,11 @@
 
     .mainHeader {
         margin-bottom: 5rem;
-        background-color: black;
+        background-color: $primary;
+
         nav {
             display: flex;
             align-items: center;
-            background-color: black;
             padding: $spacing-xsmall 0;
             height: 9rem;
             justify-content: space-around;
@@ -23,6 +23,7 @@
                 display: flex;
                 gap: $spacing-xsmall;
                 padding-left: 0;
+                margin-bottom: 0;
                 
                 .menu__item {
                     text-transform: uppercase;
@@ -34,7 +35,7 @@
                     transition: all 1s;
                     
                     &:hover {
-                        color: black;
+                        color: $primary;
                         background-color: $alternative;
                         border-radius: 5px;
                         border-style: solid;

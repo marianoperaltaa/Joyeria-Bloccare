@@ -1,14 +1,14 @@
 /* NOVEDADES */ 
 .news {
-    background-color: #F1F1F1;
+    background-color: $base;
     display: flex;
     flex-direction: column;
 
     .news__tittle {
-        font-size: 2.1rem;
+        font-size: $text-xlarge;
         text-align: center;
-        padding-top: 6rem;
-        padding-bottom: 4rem;
+        padding-top: $spacing-medium;
+        padding-bottom: $spacing-small;
     }
 
     .news__new {
@@ -18,35 +18,34 @@
         .new__office {
             border-radius: 1rem;
             border-style: solid;
-            border-color: black;
+            border-color: $primary;
             display: flex;
             flex-direction: column;
             align-items: center;
             
-            .office__img {
-                img {
-                    max-width: 40rem;
-                    max-height: 300px;
-                    border-radius: 5px;
-                    border-style: hidden;
-                    margin:$spacing-small 0;
-                }
+
+            img {
+                max-width: 40rem;
+                max-height: 300px;
+                border-radius: 5px;
+                border-style: hidden;
+                margin:$spacing-small 0;
             }
 
             .office__tittle {
                 text-align: center;
-                font-size: 1.6rem;
+                font-size: $text-medium;
                 padding: $spacing-xsmall 0;
             }
 
             .office__description {
 
                 p {
-                    color: #525252;
-                    font-size: 1.3rem;
+                    color: $dark-color;
+                    font-size: $text-small;
                     max-width: 80rem;
                     text-align: center;
-                    padding-bottom: 4rem;
+                    padding-bottom: $spacing-small;
                 }
 
                 a {
@@ -54,7 +53,7 @@
                     font-weight: bold;
                     transition: all 1.1s;
                     &:hover {
-                        background-color: #525252;
+                        background-color: $dark-color;
                         padding: 5px 1rem;
                         border-radius: 3px;
                     }

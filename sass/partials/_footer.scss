@@ -2,7 +2,7 @@
 
     .mainFooter {
         width: 100%;
-        background-color: black;
+        background-color: $primary;
         
         .mainFooter__group-1 {
             width: 100%;
@@ -28,13 +28,13 @@
                 }
                 
                 h2 {
-                    color: #F4D35E;
+                    color: $secondary;
                     margin-bottom: 2.5rem;
-                    font-size: 2em;
+                    font-size: $text-xlarge;
                 }
                 
                 p {
-                    color: #efefef;
+                    color: $light-color;
                     margin-bottom: 1rem;
                 }
                 
@@ -50,12 +50,12 @@
                     text-align: center;
                     
                     .iconify {
-                        color: #efefef;
+                        color: $light-color;
                         transition: all 1s;
 
                         &:hover {
                             transform: scale(2, 2);
-                            color: #F4D35E;
+                            color: $dark-yellow;
                         }
                     }
                 }
@@ -65,10 +65,10 @@
             background-color: rgb(29, 28, 28);
             padding: 1.5rem 1rem;
             text-align: center;
-            color: #F4D35E;
+            color: $secondary;
             grid-column: 1/4;
             small {
-                font-size: 1.5rem;
+                font-size:$text-small;
             }
         }
     }

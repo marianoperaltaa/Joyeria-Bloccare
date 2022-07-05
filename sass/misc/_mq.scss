@@ -59,46 +59,56 @@
     padding: 0;
     
     .mainTittle {
-        font-size: 2rem;
+        font-size: $text-medium;
     }
     
     .mainPicture {
         max-width: 15rem;
     }
     
-    section article .gold__tittle {
-        font-size: 1.5rem;
-    }
-    
-    section article .gold__description {
-        display: flex;
-        flex-direction: column;
-        
-        p {
-            max-width: 270px;
+    .mainJobs {
+
+        .jobs__gold {
+
+            .gold__tittle {
+                font-size: $text-medium;
+            }
+
+            .gold__description {
+                display: flex;
+                flex-direction: column;
+                
+                p {
+                    max-width: 40rem;
+                    font-size: $text-small;
+                }
+                
+                img {
+                    max-width: 15rem;
+                    max-height: 15rem;
+                }
+            }
         }
-        
-        img {
-            max-width: 20rem;
-            max-height: 20rem;
-        }
-    }
-    
-    section article .personalization__tittle {
-        font-size: 1.5rem;
-    }
-    
-    section article .personalization__description {
-        display: flex;
-        flex-direction: column;
-        
-        p {
-            max-width: 270px;
-        }
-        
-        img {
-            max-width: 20rem;
-            max-height: 20rem;
+        .jobs__personalization {
+
+            .personalization__tittle {
+                font-size: $text-medium;
+            }
+
+            .personalization__description {
+                display: flex;
+                flex-direction: column;
+                
+                p {
+                    max-width: 40rem;
+                    font-size: $text-small;
+                }
+                
+                img {
+                    max-width: 15rem;
+                    max-height: 15rem;
+                }
+            }
         }
     }
 }   
@@ -108,7 +118,7 @@
     padding: 0 5rem;
     
     .products__tittles {
-        font-size: 1.6rem;
+        font-size: $text-medium;
     }
 }
 
@@ -117,7 +127,7 @@
     padding: 0;
     
     .news__tittle {
-        font-size: 1.6rem;
+        font-size: $text-medium;
     }
     
     .news__new {
@@ -127,15 +137,13 @@
         .new__office {
 
             .office__tittle {
-                font-size: 1.3rem;
+                font-size: $text-small;
             }
             
             .office__description {
 
                 p {
-                    max-width: 400px; 
-                    max-height: 200px;
-                    overflow-y: visible;
+                    padding: $spacing-small;
                 }
             }
         }
@@ -146,7 +154,7 @@
 .aboutUs {
     padding: 0 5rem;
     .aboutUs__tittle {
-        font-size: 1.4rem;
+        font-size: $text-medium;
     }
 }
 
@@ -174,7 +182,7 @@
         grid-column: 3/5;
         grid-row: 2/3;
         padding-top: 5rem;
-        padding-left: 4rem;
+        padding-left: $spacing-small;
     
         .information__cards {
     
@@ -208,10 +216,10 @@
     }
     
     .menu {
-        gap: 2rem;
+        gap: $spacing-xsmall;
         
         li .menu__link {
-            font-size: 1.3rem;
+            font-size: $text-xsmall;
             padding: 4px;
             padding-bottom: 1rem;
         }
@@ -287,7 +295,7 @@
         gap: 5px;
 
         li .menu__link {
-            font-size: 1rem;
+            font-size: 1em;
         }
     }
 }
@@ -305,7 +313,7 @@
         grid-template-rows: repeat(3, auto);
         grid-gap: 3rem;
         padding-top: 4.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: $spacing-xsmall;
 
         .group-1__box--grid1 {
             grid-column: 1/2;
@@ -325,7 +333,7 @@
         .group-1__box--grid3 {
             grid-column: 1/2;
             grid-row: 3/4;
-            padding: 0 2rem;
+            padding: 0 $spacing-xsmall;
         }
     }
 }
@@ -335,7 +343,7 @@
     padding: 0;
 
     .mainTittle {
-        font-size: 1.5rem;
+        font-size: $text-small;
     }
 
     .mainPicture {
@@ -344,61 +352,96 @@
 
     .mainJobs {
         padding: 0 3rem;
-        padding-bottom: 8rem;
+        padding-bottom: $spacing-large;
 
-        article .gold__tittle {
-            font-size: 1.3rem;
-        }
-
-        article .gold__description {
-            display: flex;
-            flex-direction: column;
-
-            img {
-                width: 15rem;
-                height: 15rem;
-            }
-        }
-
-        article .personalization__tittle {
-            font-size: 1.3rem;
-        }
-
-        article .personalization__description {
-            display: flex;
-            flex-direction: column;
-
-            img {
-                width: 25rem;
-                height: 25rem;
-            }
+        .jobs__gold {
             
+            .gold__tittle {
+                font-size: 1.3rem;
+            }
+            .gold__description {
+                display: flex;
+                flex-direction: column;
+    
+                img {
+                    width: 15rem;
+                    height: 15rem;
+                }
+            }
+        }
+
+        .jobs__personalization {
+
+            .personalization__tittle {
+                font-size: 1.3rem;
+            }
+            .personalization__description {
+                display: flex;
+                flex-direction: column;
+    
+                img {
+                    width: 15rem;
+                    height: 15rem;
+                }
+                
+            }
         }
     }
 }
 
     /* PRODUCTOS */
 .products {
-    padding: 0 0rem;
+    padding: 0 0;
 
     .products__tittles {
-        font-size: 1.6rem;
+        font-size: $text-small;
+    }
+
+    .row {
+
+        .col {
+
+            .card {
+
+                .card-body {
+
+                    .card-title {
+                        font-size: $text-small;
+                    }
+                }
+
+                .button--more {
+                    font-size: $text-xsmall;
+                }
+
+                .button--shop {
+                    font-size: $text-xsmall;
+                }
+            }
+        }
     }
 }
 
     /* NOVEDADES */ 
 .news {
 
+    .news__tittle {
+        font-size: $text-small;
+    }
+
     .news__new {
-        padding: 0 2rem;
-        margin-bottom: 6rem;
+        padding: 0 $spacing-xsmall;
+        margin-bottom: $spacing-medium;
 
         .new__office {
             border: none;
 
             .office__description {
-                padding: 0;
-                overflow-y: visible;
+
+                p {
+                    padding: 0;
+                    font-size: $text-xsmall;
+                }
             }
         }
     }
@@ -407,10 +450,17 @@
     /* NOSOTROS */
 .aboutUs {
     padding: 0 2.5rem;
+    .aboutUs__tittle {
+        font-size: $text-small;
+    }
 }
 
     /* CONTACTO */
 .contactUs {
+
+    .contactUs__tittle {
+        font-size: $text-small;
+    }
 
     .contactUs__form {
 
