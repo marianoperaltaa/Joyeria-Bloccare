@@ -1,8 +1,6 @@
 /* NOVEDADES */ 
 .news {
     background-color: $base;
-    display: flex;
-    flex-direction: column;
 
     .news__tittle {
         font-size: $text-xlarge;
@@ -19,10 +17,7 @@
             border-radius: 1rem;
             border-style: solid;
             border-color: $primary;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
+            @include flex (column, flex-start, center);
 
             img {
                 max-width: 40rem;

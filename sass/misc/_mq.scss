@@ -23,12 +23,10 @@
 .mainFooter {
     
     .mainFooter__group-1 {
+        @include grid (2, 2);
         width: 100%;
         max-width: 1200px;
         margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
         grid-gap: 3rem;
         padding-top: 4.5rem;
         margin-bottom: 2rem;
@@ -75,8 +73,7 @@
             }
 
             .gold__description {
-                display: flex;
-                flex-direction: column;
+                @include flex (column, flex-start, center);
                 
                 p {
                     max-width: 40rem;
@@ -96,8 +93,7 @@
             }
 
             .personalization__description {
-                display: flex;
-                flex-direction: column;
+                @include flex (column, flex-start, center);
                 
                 p {
                     max-width: 40rem;
@@ -161,10 +157,8 @@
     /* CONTACTO */
 
 .contactUs {
+    @include grid (4, 5);
     padding: 0 2.5rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, auto);
     row-gap: 2rem;
     
     .contactUs__tittle {
@@ -206,8 +200,7 @@
 
     /* HEADER */
 .mainHeader nav {
-    display: flex;
-    flex-direction: column;
+    @include flex (column, space-around, center);
     height: 150px;
     padding-top: 1rem;
     
@@ -240,9 +233,7 @@
 
     /* CONTACTO */
 .contactUs {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, auto);
+    @include grid (1, 4);
     
     .contactUs__tittle {
         grid-column: 1/2;
@@ -282,8 +273,7 @@
 
     /* HEADER */
 .mainHeader nav {
-    display: flex;
-    flex-direction: column;
+    @include flex (column, space-around, center);
     height: 150px;
     padding-top: 1rem;
 
@@ -308,9 +298,7 @@
         width: 100%;
         max-width: 1200px;
         margin: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, auto);
+        @include grid (1, 3);
         grid-gap: 3rem;
         padding-top: 4.5rem;
         margin-bottom: $spacing-xsmall;
@@ -359,10 +347,10 @@
             .gold__tittle {
                 font-size: 1.3rem;
             }
+
             .gold__description {
-                display: flex;
-                flex-direction: column;
-    
+                @include flex (column, flex-start, center);
+
                 img {
                     width: 15rem;
                     height: 15rem;
@@ -376,9 +364,8 @@
                 font-size: 1.3rem;
             }
             .personalization__description {
-                display: flex;
-                flex-direction: column;
-    
+                @include flex (column, flex-start, center);
+
                 img {
                     width: 15rem;
                     height: 15rem;

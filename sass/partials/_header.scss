@@ -5,11 +5,9 @@
         background-color: $primary;
 
         nav {
-            display: flex;
-            align-items: center;
+            @include flex (row, space-around, center);
             padding: $spacing-xsmall 0;
             height: 9rem;
-            justify-content: space-around;
             
             .nav__logo {
                 display: flex;
@@ -20,7 +18,7 @@
             }
             
             .menu {
-                display: flex;
+                @include flex (row, flex-start, stretch);
                 gap: $spacing-xsmall;
                 padding-left: 0;
                 margin-bottom: 0;

@@ -1,0 +1,13 @@
+    /* MIXINGS */
+@mixin flex($dir, $jus, $alg){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $alg;
+}
+
+@mixin grid ($gtc, $gtr) {
+    display: grid;
+    grid-template-columns: repeat($gtc, 1fr);
+    grid-template-rows: repeat($gtr, auto);
+}
