@@ -3,10 +3,8 @@
     background-color: $base;
 
     .news__tittle {
-        font-size: $text-xlarge;
         text-align: center;
-        padding-top: $spacing-medium;
-        padding-bottom: $spacing-small;
+        padding: $spacing-small 0;
     }
 
     .news__new {
@@ -14,9 +12,6 @@
         max-width: 900px;
 
         .new__office {
-            border-radius: 1rem;
-            border-style: solid;
-            border-color: $primary;
             @include flex (column, flex-start, center);
 
             img {
@@ -29,7 +24,6 @@
 
             .office__tittle {
                 text-align: center;
-                font-size: $text-medium;
                 padding: $spacing-xsmall 0;
             }
 
@@ -41,6 +35,7 @@
                     max-width: 80rem;
                     text-align: center;
                     padding-bottom: $spacing-small;
+                    margin-bottom: 0;
                 }
 
                 a {

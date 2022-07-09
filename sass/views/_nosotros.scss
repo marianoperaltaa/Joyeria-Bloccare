@@ -2,27 +2,32 @@
 .aboutUs {
     background-color: $base;
     margin-bottom: 25rem;
+
     .aboutUs__tittle {
-        font-size: $text-xlarge;
         text-align: center;
         padding: $spacing-large 0;
         text-decoration: overline;
     }
+
     .accordion {
-        max-width: 50rem;
+        max-width: 75rem;
         margin: auto;
+
         .accordion-item {
+
             .accordion-header {
+
                 .accordion-button {
-                    font-size: 1em;
+                    font-size: 1.4em;
                     color: $dark-yellow;
                     background-color: $dark-color;
                 }
             }
         }
+
         .accordion-body {
                 color: $dark-color;
-                font-size: $text-xsmall;
+                font-size: 1.5em;
         }
     }
 }

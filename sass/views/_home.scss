@@ -1,68 +1,67 @@
 /* HOME */
 .mainContent {
     background-color: $base;
-    
+
     .mainTittle {
-        font-size: $text-xlarge;
         text-align: center;
         padding: $spacing-medium 0;
     }
-    
+
     .mainPicture {
-        max-width: 20rem;
+        max-width: 15rem;
         margin: 0 auto;
         margin-bottom: 15rem;
-        
+
         svg g g #shop__bag {
             animation-name: rotateMe;
             animation-duration: 6s;
             animation-iteration-count: infinite;
-            
+
             @keyframes rotateMe {
                 0% {
                     transform: rotatex(-50deg);
                 }
-            
+
                 100% {
                     transform: rotateX(50deg);
                 }
         }
         }
     }
-    
+
     .mainJobs {
         padding-bottom: $spacing-xlarge;
-        
+
         .jobs__gold {
             margin-top: 3rem;
             margin-bottom: 1rem;
-            
+
             .gold__tittle{
-                font-size: $text-large;
                 text-align: center;
                 padding-bottom: 4.5rem;
                 text-decoration: underline;
             }
-            
+
             .gold__description {
                 gap: $spacing-small;
                 @include flex (row, space-between, center);
                 border-bottom: 2px solid $secondary;
                 padding-bottom: $spacing-medium;
                 margin-bottom: 1rem;
-                
+
                 img {
                     max-width: 20rem;
                     max-height: 20rem;
                     border-radius: 50%;
                     border-style: solid;
                 }
-                
+
                 p {
                     max-width: 50rem;
                     text-align: justify;
-                    font-size: $text-medium;
+                    font-size: $text-small;
                     color: $dark-color;
+                    margin-bottom: 0;
                 }
 
                 a {
@@ -77,41 +76,42 @@
                 }
             }
         }
-        
+
         .jobs__personalization {
             margin-top: 5px;
             border-top: 2px solid $secondary;
-            
+
             .personalization__tittle{
-                font-size: $text-large;
                 text-align: center;
                 padding-bottom: $spacing-small;
                 padding-top: 5rem;
                 text-decoration: underline;
             }
-            
+
             .personalization__description {
                 gap: $spacing-small;
                 @include flex (row, space-between, center);
-                
+
                 img {
                     max-width: 20rem;
                     max-height: 20rem;
                     border-radius: 50%;
                     border-style: solid;
                 }
-                
+
                 p {
                     max-width: 50rem;
                     text-align: justify;
-                    font-size: $text-medium;
+                    font-size: $text-small;
                     color: $dark-color;
+                    margin-bottom: 0;
                 }
 
                 a {
                     color: $alternative;
                     font-weight: bold;
                     transition: all 1.1s;
+
                     &:hover {
                         background-color: $dark-color;
                         border-radius: 3px;

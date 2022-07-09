@@ -1,60 +1,52 @@
     /* HEADER */
 
-    .mainHeader {
-        margin-bottom: 5rem;
-        background-color: $primary;
+.mainHeader {
+    margin-bottom: 5rem;
+    background-color: $primary;
 
-        nav {
-            @include flex (row, space-around, center);
-            padding: $spacing-xsmall 0;
-            height: 9rem;
-            
-            .nav__logo {
-                display: flex;
-                
-                .nav__img {
-                    height: 60px;
-                }
-            }
-            
-            .menu {
-                @include flex (row, flex-start, stretch);
-                gap: $spacing-xsmall;
-                padding-left: 0;
-                margin-bottom: 0;
-                
-                .menu__item {
-                    text-transform: uppercase;
-                }
-                
-                .menu__link {
-                    font-size: $text-xsmall;
-                    padding: 1rem 1.2rem;
-                    transition: all 1s;
-                    
-                    &:hover {
-                        color: $primary;
-                        background-color: $alternative;
-                        border-radius: 5px;
-                        border-style: solid;
-                        border-color: $alternative;
-                        letter-spacing: 0.25em;
-                        font-weight: bold;
-                    }
-                }
-                
-                .menu__link--active {
-                    border-bottom: 2px solid $alternative;
-                    padding-bottom: 1.2rem;
-                }
+    nav {
+        @include flex (row, space-around, center);
+        padding: $spacing-xsmall 0;
+        height: 9rem;
+
+        .nav__logo {
+            display: flex;
+
+            .nav__img {
+                height: 60px;
             }
         }
-    } 
-    
-    
-    
-    
-    
-    
-    
-    
+
+        .menu {
+            @include flex (row, flex-start, stretch);
+            gap: $spacing-xsmall;
+            padding-left: 0;
+            margin-bottom: 0;
+
+            .menu__item {
+                text-transform: uppercase;
+            }
+
+            .menu__link {
+                font-size: $text-xsmall;
+                padding: 1rem 1.2rem;
+                transition: all 1s;
+
+                &:hover {
+                    color: $primary;
+                    background-color: $alternative;
+                    border-radius: 5px;
+                    border-style: solid;
+                    border-color: $alternative;
+                    letter-spacing: 0.25em;
+                    font-weight: bold;
+                }
+            }
+
+            .menu__link--active {
+                border-bottom: 2px solid $alternative;
+                padding-bottom: 1.2rem;
+            }
+        }
+    }
+} 

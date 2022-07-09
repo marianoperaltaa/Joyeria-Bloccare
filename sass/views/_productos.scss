@@ -2,41 +2,47 @@
 .products {
     background-color: $base;
     margin-bottom: $spacing-medium;
-    
+
     .products__tittles {
-        font-size: $text-xlarge;
         margin: $spacing-medium 0;
         text-align: center;
     }
-    
+
     div .col {
         transition: all 1.5s;
+
         &:hover {
             transform: scale(1.2, 1.2);
             z-index: 1;
         }
+
         .card {
             max-width: 350px;
             padding-bottom: 1rem;
+
             img {
                 max-height: 350px;
                 max-width: 350px;
                 padding: 1rem;
             }
         }
+
         .card-body {
+
             .card-title {
                 font-size: $text-medium;
             }
+
             .card-text {
                 font-size: $text-xsmall;
                 color: $dark-color;
             }
         }
+
         .button {
             width: 170px;
             margin: 8px auto;
-            font-size: $text-small;
+            font-size: 1.4em;
             border: none;
             border-radius: 5px;
             border-style: hidden;
@@ -45,11 +51,13 @@
             background-color: rgb(42, 81, 190);
             padding: 1rem 8px;
         }
+
         .button--more {
             @extend .button;
             background-color: $dark-yellow;
             color: $primary
         }
+
         .button--shop {
             @extend .button;
             background-color: $dark-color;

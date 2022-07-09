@@ -124,18 +124,17 @@ img {
     color: #F4D35E;
     grid-column: 1/4; }
     .mainFooter .mainFooter__group-2 small {
-      font-size: 1.4em; }
+      font-size: 1.6em; }
 
 /* VIEWS */
 /* HOME */
 .mainContent {
   background-color: #F1F1F1; }
   .mainContent .mainTittle {
-    font-size: 2em;
     text-align: center;
     padding: 6rem 0; }
   .mainContent .mainPicture {
-    max-width: 20rem;
+    max-width: 15rem;
     margin: 0 auto;
     margin-bottom: 15rem; }
     .mainContent .mainPicture svg g g #shop__bag {
@@ -154,7 +153,6 @@ img {
       margin-top: 3rem;
       margin-bottom: 1rem; }
       .mainContent .mainJobs .jobs__gold .gold__tittle {
-        font-size: 1.8em;
         text-align: center;
         padding-bottom: 4.5rem;
         text-decoration: underline; }
@@ -176,7 +174,8 @@ img {
           max-width: 50rem;
           text-align: justify;
           font-size: 1.6em;
-          color: #525252; }
+          color: #525252;
+          margin-bottom: 0; }
         .mainContent .mainJobs .jobs__gold .gold__description a {
           color: #DBA159;
           font-weight: bold;
@@ -189,7 +188,6 @@ img {
       margin-top: 5px;
       border-top: 2px solid #F4D35E; }
       .mainContent .mainJobs .jobs__personalization .personalization__tittle {
-        font-size: 1.8em;
         text-align: center;
         padding-bottom: 4rem;
         padding-top: 5rem;
@@ -209,7 +207,8 @@ img {
           max-width: 50rem;
           text-align: justify;
           font-size: 1.6em;
-          color: #525252; }
+          color: #525252;
+          margin-bottom: 0; }
         .mainContent .mainJobs .jobs__personalization .personalization__description a {
           color: #DBA159;
           font-weight: bold;
@@ -224,7 +223,6 @@ img {
   background-color: #F1F1F1;
   margin-bottom: 6rem; }
   .products .products__tittles {
-    font-size: 2em;
     margin: 6rem 0;
     text-align: center; }
   .products div .col {
@@ -240,7 +238,7 @@ img {
         max-width: 350px;
         padding: 1rem; }
     .products div .col .card-body .card-title {
-      font-size: 1.6em; }
+      font-size: 2em; }
     .products div .col .card-body .card-text {
       font-size: 1.2em;
       color: #525252; }
@@ -266,17 +264,12 @@ img {
 .news {
   background-color: #F1F1F1; }
   .news .news__tittle {
-    font-size: 2em;
     text-align: center;
-    padding-top: 6rem;
-    padding-bottom: 4rem; }
+    padding: 4rem 0; }
   .news .news__new {
     padding-bottom: 5rem;
     max-width: 900px; }
     .news .news__new .new__office {
-      border-radius: 1rem;
-      border-style: solid;
-      border-color: black;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -289,14 +282,14 @@ img {
         margin: 4rem 0; }
       .news .news__new .new__office .office__tittle {
         text-align: center;
-        font-size: 1.6em;
         padding: 2rem 0; }
       .news .news__new .new__office .office__description p {
         color: #525252;
-        font-size: 1.4em;
+        font-size: 1.6em;
         max-width: 80rem;
         text-align: center;
-        padding-bottom: 4rem; }
+        padding-bottom: 4rem;
+        margin-bottom: 0; }
       .news .news__new .new__office .office__description a {
         color: #DBA159;
         font-weight: bold;
@@ -311,20 +304,19 @@ img {
   background-color: #F1F1F1;
   margin-bottom: 25rem; }
   .aboutUs .aboutUs__tittle {
-    font-size: 2em;
     text-align: center;
     padding: 8rem 0;
     text-decoration: overline; }
   .aboutUs .accordion {
-    max-width: 50rem;
+    max-width: 75rem;
     margin: auto; }
     .aboutUs .accordion .accordion-item .accordion-header .accordion-button {
-      font-size: 1em;
+      font-size: 1.4em;
       color: #f9c846;
       background-color: #525252; }
     .aboutUs .accordion .accordion-body {
       color: #525252;
-      font-size: 1.2em; }
+      font-size: 1.5em; }
 
 /* CONTACTO */
 .contactUs {
@@ -334,7 +326,6 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, auto); }
   .contactUs .contactUs__tittle {
-    font-size: 2em;
     text-align: center;
     padding: 8rem 0;
     grid-column: 1/5;
@@ -363,7 +354,8 @@ img {
         background-color: #DBA159;
         border-color: #DBA159;
         color: black;
-        font-weight: 600; }
+        font-weight: 600;
+        font-size: 1.2em; }
   .contactUs .contactUs__information {
     display: flex;
     flex-direction: column;
@@ -383,7 +375,7 @@ img {
         max-width: 2.5rem;
         padding-bottom: 1rem; }
       .contactUs .contactUs__information .information__cards .cards__text {
-        font-size: 1.4em; }
+        font-size: 1.6em; }
         .contactUs .contactUs__information .information__cards .cards__text p {
           padding: 0;
           text-align: center;
@@ -399,6 +391,33 @@ img {
     grid-row: 3/6; }
 
 /* MEDIA QUERIES */
+/* MEDIA QUERIE MIN 1200PX */
+@media (min-width: 1200px) {
+  /* INICIO */
+  .mainContent h1 {
+    font-size: 4.5em;
+    margin-bottom: 0; }
+  .mainContent h2 {
+    font-size: 2.5em;
+    margin-bottom: 0; }
+  /* PRODUCTOS */
+  .products h1 {
+    font-size: 4.5em; }
+  /* NOVEDADES */
+  .news h1 {
+    font-size: 4.5em;
+    margin-bottom: 0; }
+  .news h2 {
+    font-size: 3em;
+    margin-bottom: 0; }
+  /* NOSOTROS */
+  .aboutUs h1 {
+    font-size: 4.5em;
+    margin-bottom: 0; }
+  /* CONTACTO */
+  .contactUs h1 {
+    font-size: 4.5em; } }
+
 /* MEDIA QUERIE 960PX */
 @media screen and (max-width: 960px) {
   /* HEADER */
@@ -433,12 +452,10 @@ img {
   /* INICIO */
   .mainContent {
     padding: 0; }
-    .mainContent .mainTittle {
-      font-size: 1.6em; }
     .mainContent .mainPicture {
       max-width: 15rem; }
     .mainContent .mainJobs .jobs__gold .gold__tittle {
-      font-size: 1.6em; }
+      font-size: 2em; }
     .mainContent .mainJobs .jobs__gold .gold__description {
       display: flex;
       flex-direction: column;
@@ -446,12 +463,12 @@ img {
       align-items: center; }
       .mainContent .mainJobs .jobs__gold .gold__description p {
         max-width: 40rem;
-        font-size: 1.4em; }
+        font-size: 1.6em; }
       .mainContent .mainJobs .jobs__gold .gold__description img {
         max-width: 15rem;
         max-height: 15rem; }
     .mainContent .mainJobs .jobs__personalization .personalization__tittle {
-      font-size: 1.6em; }
+      font-size: 2em; }
     .mainContent .mainJobs .jobs__personalization .personalization__description {
       display: flex;
       flex-direction: column;
@@ -459,32 +476,25 @@ img {
       align-items: center; }
       .mainContent .mainJobs .jobs__personalization .personalization__description p {
         max-width: 40rem;
-        font-size: 1.4em; }
+        font-size: 1.6em; }
       .mainContent .mainJobs .jobs__personalization .personalization__description img {
         max-width: 15rem;
         max-height: 15rem; }
   /* PRODUCTOS */
   .products {
     padding: 0 5rem; }
-    .products .products__tittles {
-      font-size: 1.6em; }
   /* NOVEDADES */
   .news {
     padding: 0; }
-    .news .news__tittle {
-      font-size: 1.6em; }
     .news .news__new {
-      max-width: 480px;
       margin: 0 auto; }
       .news .news__new .new__office .office__tittle {
-        font-size: 1.4em; }
+        font-size: 1.6em; }
       .news .news__new .new__office .office__description p {
         padding: 4rem; }
   /* NOSOTROS */
   .aboutUs {
     padding: 0 5rem; }
-    .aboutUs .aboutUs__tittle {
-      font-size: 1.6em; }
   /* CONTACTO */
   .contactUs {
     display: grid;
@@ -493,7 +503,6 @@ img {
     padding: 0 2.5rem;
     row-gap: 2rem; }
     .contactUs .contactUs__tittle {
-      font-size: 1.6rem;
       grid-column: 1/5;
       grid-row: 1/2; }
     .contactUs .contactUs__form {
@@ -528,15 +537,29 @@ img {
         font-size: 1.2em;
         padding: 4px;
         padding-bottom: 1rem; }
+  /* INICIO */
+  .mainContent .mainJobs .jobs__gold .gold__description p {
+    font-size: 1.4em; }
+  .mainContent .mainJobs .jobs__personalization .personalization__description p {
+    font-size: 1.4em; }
   /*PRODUCTOS*/
   .products div .col .card {
     margin: auto;
     padding: 1rem; }
+  /* NOVEDADES */
+  .news .news__new .new__office .office__description p {
+    font-size: 1.4em; }
+  /* NOSOTROS */
+  .aboutUs .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 1.2em; }
+  .aboutUs .accordion .accordion-body {
+    font-size: 1.4em; }
   /* CONTACTO */
   .contactUs {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, auto); }
+    grid-template-rows: repeat(4, auto);
+    margin-bottom: 4rem; }
     .contactUs .contactUs__tittle {
       grid-column: 1/2;
       grid-row: 1/2; }
@@ -599,15 +622,11 @@ img {
   /* INICIO */
   .mainContent {
     padding: 0; }
-    .mainContent .mainTittle {
-      font-size: 1.4em; }
     .mainContent .mainPicture {
       max-width: 10rem; }
     .mainContent .mainJobs {
       padding: 0 3rem;
       padding-bottom: 8rem; }
-      .mainContent .mainJobs .jobs__gold .gold__tittle {
-        font-size: 1.3rem; }
       .mainContent .mainJobs .jobs__gold .gold__description {
         display: flex;
         flex-direction: column;
@@ -616,8 +635,6 @@ img {
         .mainContent .mainJobs .jobs__gold .gold__description img {
           width: 15rem;
           height: 15rem; }
-      .mainContent .mainJobs .jobs__personalization .personalization__tittle {
-        font-size: 1.3rem; }
       .mainContent .mainJobs .jobs__personalization .personalization__description {
         display: flex;
         flex-direction: column;
@@ -629,17 +646,13 @@ img {
   /* PRODUCTOS */
   .products {
     padding: 0 0; }
-    .products .products__tittles {
-      font-size: 1.4em; }
     .products .row .col .card .card-body .card-title {
-      font-size: 1.4em; }
+      font-size: 1.6em; }
     .products .row .col .card .button--more {
       font-size: 1.2em; }
     .products .row .col .card .button--shop {
       font-size: 1.2em; }
   /* NOVEDADES */
-  .news .news__tittle {
-    font-size: 1.4em; }
   .news .news__new {
     padding: 0 2rem;
     margin-bottom: 6rem; }
@@ -651,10 +664,10 @@ img {
   /* NOSOTROS */
   .aboutUs {
     padding: 0 2.5rem; }
-    .aboutUs .aboutUs__tittle {
-      font-size: 1.4em; }
+    .aboutUs .accordion .accordion-item .accordion-header .accordion-button {
+      font-size: 1em; }
+    .aboutUs .accordion .accordion-body {
+      font-size: 1.2em; }
   /* CONTACTO */
-  .contactUs .contactUs__tittle {
-    font-size: 1.4em; }
   .contactUs .contactUs__form .row .col-md-6 {
-    width: 100%; } }
+    width: 75%; } }

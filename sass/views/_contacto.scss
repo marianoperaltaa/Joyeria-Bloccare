@@ -5,7 +5,6 @@
     @include grid (4, 5);
 
     .contactUs__tittle {
-        font-size: $text-xlarge;
         text-align: center;
         padding: $spacing-large 0;
         grid-column: 1/5;
@@ -27,7 +26,7 @@
             .col-md-6 {
 
                 .form-label {
-                    font-size: $text-small;
+                    font-size: 1.4em;
                 }
 
                 .form-control {
@@ -42,48 +41,50 @@
                     border-color: $alternative;
                     color: $primary;
                     font-weight: 600;
+                    font-size: $text-xsmall;
                 }
             }
         }
     }
-    
+
     .contactUs__information {
         @include flex (column, flex-start, stretch);
         grid-column: 3/5;
         grid-row: 2/3;
         margin-bottom: 5rem;
         border-left: 2px solid $alternative;
-        
+
         .information__cards {
             @include flex (column, flex-start, center);
             margin-bottom: 3rem;
-            
+
             .cards__img {
                 max-width: 2.5rem;
                 padding-bottom: 1rem;
             }
-            
+
             .cards__text {
                 font-size: $text-small;
-                
+
                 p {
                     padding: 0;
                     text-align: center;
                     color: $dark-color;
                 }
-                
+
                 strong {
                     color: $primary;
                     padding: 1rem 0;
                 }
             }
-            
+
             .cards__text--width {
                 max-width: 259.28px;
                 text-align: center;
             }
         }
     }
+
     .contactUs__map {
         grid-column: 1/5;
         grid-row: 3/6;
