@@ -305,8 +305,7 @@ img {
   margin-bottom: 25rem; }
   .aboutUs .aboutUs__tittle {
     text-align: center;
-    padding: 8rem 0;
-    text-decoration: overline; }
+    padding: 8rem 0; }
   .aboutUs .accordion {
     max-width: 75rem;
     margin: auto; }
